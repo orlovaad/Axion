@@ -74,9 +74,97 @@ body {
   font: 400 12px Gotham Pro;
 }
 
+.catalog__price-color {
+  display: flex;
+  justify-content: space-between;
+}
+
 .catalog__price {
   font: bold 14px Gotham Pro;
 }
+
+.catalog__color {
+  display: flex;
+  align-items: center;
+}
+
+.catalog__cirle {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin: 0 4px;
+  background: black;
+}
+
+/* .catalog__cirle:nth-child(2) {
+  width: 9px;
+  height: 9px;
+}
+
+.catalog__color_first:nth-child(1) {
+  color: #c4c4c4;
+}
+
+.catalog__color_first:nth-child(2) {
+  background: #0e1211;
+}
+
+.catalog__color_first:nth-child(3) {
+  background: #b62e3c;
+}
+
+.catalog__color_first:nth-child(4) {
+  background: #fdb431;
+}
+
+.catalog__color_second:nth-child(1) {
+  background: #c4c4c4;
+}
+
+.catalog__color_second:nth-child(2) {
+  background: #e29d69;
+}
+
+.catalog__color_second:nth-child(3) {
+  background: #b62e3c;
+}
+
+.catalog__color_second:nth-child(4) {
+  background: #fdb431;
+}
+
+.catalog__color_third:nth-child(1) {
+  background: #c4c4c4;
+}
+
+.catalog__color_third:nth-child(2) {
+  background: #762e31;
+}
+
+.catalog__color_third:nth-child(3) {
+  background: #41479b;
+}
+
+.catalog__color_third:nth-child(4) {
+  background: #fdb431;
+}
+
+.catalog__color_fourth:nth-child(1) {
+  background: #c4c4c4;
+}
+
+.catalog__color_fourth:nth-child(2) {
+  background: #257da9;
+}
+
+.catalog__color_fourth:nth-child(3) {
+  background: #b62e3c;
+}
+
+.catalog__color_fourth:nth-child(4) {
+  background: #fdb431;
+} */
+
 
 /* Video */
 .video {
