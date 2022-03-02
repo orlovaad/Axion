@@ -9,20 +9,70 @@ body {
     margin-bottom: 15px;
 }
 
+/* .arrow {
+  border: solid white;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+hr {
+  margin: 0;
+  height: 0px;
+  align-self: center;
+} */
+
+
+.arrow {
+
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  display: inline-block;
+  position: relative;
+}
+  arrow::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    border-style: solid;
+    border-color: #000;
+    border-width: 2px 2px 0 0;
+    position: absolute;
+    transform-origin: 50% 50%;
+    transform: rotate(45deg);
+    margin: -15px 0 0 -20px;
+  }
+
+  .arrow::after {
+  content: '';
+  display: block;
+  top: 50%;
+  left: 50%;
+  border-style: solid;
+  border-color: #000;
+  position: absolute;
+  transform-origin: 50% 50%;
+  width: 40px;
+  height: 0;
+  border-width: 2px 0 0 0;
+  transform: translate(-26px, -1px);
+}
+
+
+
 /* Top */
 .top {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.top__container {
-    position: relative;
-}
-
-.top__foto img {
-    width: 1030px;
-    height: 280px;
+  width: 1030px;
+  height: 280px;
+  margin: 50px auto;
+  position: relative;
+  background: url(images/main.jpg);
 }
 
 .top__text {
@@ -39,6 +89,8 @@ body {
 }
 
 .top__subtitle {
+  display: flex;
+  justify-content: left;
   font: 400 12px/11px Gotham Pro;
 }
 
@@ -55,40 +107,58 @@ body {
   justify-content: space-between;
 }
 
-.catalog__line {
-  height: 150px;
-  width: 1px;
-  object-position: 0 50px;
+.model__line {
+  border-left: 2px solid #e5e5e5;
+  height: 100px;
+  margin-top: 40px;
 }
 
-.catalog__model {
+.model {
   margin: 0 auto;
+  width: 187px;
 }
 
-.catalog__foto img {
-  width: 188px;
-  height: 173px;
+.model:nth-child(1) {
+  background: url(images/shoes-black.jpg) no-repeat;
+  background-size: 187px 173px;
 }
 
-.catalog__title {
+.model:nth-child(3) {
+  background: url(images/shoes-brown.jpg) no-repeat;
+  background-size: 187px 173px;
+}
+
+.model:nth-child(5) {
+  background: url(images/shoes-grey.jpg) no-repeat;
+  background-size: 187px 173px;
+}
+
+.model:nth-child(7) {
+  background: url(images/shoes-white.jpg) no-repeat;
+  background-size: 187px 173px;
+}
+
+.model__title {
   font: 400 12px Gotham Pro;
+  margin-top: 170px;
+  margin-bottom: 8px;
 }
 
-.catalog__price-color {
+.model__price-color {
   display: flex;
   justify-content: space-between;
 }
 
-.catalog__price {
+.model__price {
   font: bold 14px Gotham Pro;
 }
 
-.catalog__color {
+.model__color {
   display: flex;
   align-items: center;
 }
 
-.catalog__cirle {
+.model__cirle {
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -96,11 +166,21 @@ body {
   background: black;
 }
 
-/* .catalog__cirle:nth-child(2) {
+.model__cirle:nth-child(1) {
+  background: #c4c4c4;
+}
+
+.model__cirle:nth-child(2) {
   width: 9px;
   height: 9px;
 }
 
+.model__cirle:nth-child(4) {
+  background: #fdb431;
+}
+
+
+/*
 .catalog__color_first:nth-child(1) {
   color: #c4c4c4;
 }
@@ -113,9 +193,8 @@ body {
   background: #b62e3c;
 }
 
-.catalog__color_first:nth-child(4) {
-  background: #fdb431;
-}
+
+
 .catalog__color_second:nth-child(1) {
   background: #c4c4c4;
 }
@@ -220,41 +299,48 @@ body {
 .story {
   display: flex;
   justify-content: space-between;
-  margin: 0 5% 50px 5%;
+  margin: 20px 5% 50px 5%;
 }
 
-.story__box {
+.story-box {
+  background-size: 307px 147px;
   width: 307px;
-  margin-top: 20px;
 }
 
-.story__foto img {
-  width: 307px;
-  height: 147px;
-  margin-bottom: 20px;
+.story-box:nth-child(1) {
+  background: url(images/story-1.jpg) no-repeat;
 }
 
-.story__title {
+.story-box:nth-child(2) {
+  background: url(images/story-2.jpg) no-repeat;
+}
+
+.story-box:nth-child(3) {
+  background: url(images/story-3.jpg) no-repeat;
+}
+
+.story-box__title {
   font: 600 18px/17px Gotham Pro;
+  margin-top: 170px;
   margin-bottom: 8px;
 }
 
-.story__subtitle {
+.story-box__subtitle {
   font: 400 14px/17px Gotham Pro;
   margin-bottom: 18px;
 }
 
-.story__footer {
+.story-box__footer {
   display: flex;
   justify-content: space-between;
 }
 
-.story__more {
+.story-box__more {
   font: 600 12px/11px Gotham Pro;
   text-transform: uppercase;
 }
 
-.story__date {
+.story-box__date {
   color: #b3b3b3;
   font: 600 12px/11px Gotham Pro;
 }
@@ -311,7 +397,7 @@ body {
   margin-bottom: 10px;
 }
 
-.footer__subtitle {
+.footer__offer {
   font-weight: 400;
   text-decoration: none;
   margin-bottom: 6px;
