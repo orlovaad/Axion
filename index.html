@@ -6,109 +6,122 @@
   <meta name="viewport"  content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="fonts.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
 </head>
 
 <body>
   <div class="header">
-    <div>
-      <div class="logo"> </div>
+    <div class="menu-right">
+      <div class="logo-main"> </div>
       <nav class="menu">
         <a class="menu__item" href="#">SHOP</a>
         <a class="menu__item" href="#">NEWS</a>
         <a class="menu__item" href="#">TEAM</a>
         <a class="menu__item" href="#">LEGACY</a>
         <a class="menu__item" href="#">HELP</a>
-      </div>
-      <div>
-        <nav class="menu">
+      </nav>
+    </div>
+    <div class="menu-left">
+      <nav class="menu">
+        <div class="menu__search-container">
+          <button class="icon" href="#"><i class="fa fa-search"></i></button>
           <input type="text" size="40" name="name" class="menu__search">
-          <a class="menu__item" href="#">SIGN IN</a>
-          <a class="menu__item" href="#"><div class="menu__item-text">CART</div></a>
-        </nav>
-        <img src="images/flag.svg" class="flag" alt="Flag USA">
-        <div class="hamburger-menu">
-          <input id="menu__toggle" type="checkbox" />
-          <label class="menu__btn" for="menu__toggle">
-            <span></span>
-          </label>
+        </div>
+        <a class="menu__item" href="#">SIGN IN</a>
+        <a class="menu__item" href="#">CART</a>
+        <span class="menu__cart">1</span>
+      </nav>
+      <div class="menu__language">
+        <button class="language"><img src="images/flag-usa.svg" alt="Flag USA"></button>
+        <div class="language-type">
+          <a href="#"><img src="images/flag-rus.png" alt="Flag Russia" width="20px" href="20px"></a>
+          <a href="#"><img src="images/flag-spain.jpg" alt="Flag Spain" width="20px" href="20px"></a>
         </div>
       </div>
     </div>
+    <div class="hamburger-menu">
+      <div class="logo-mobile"> </div>
+      <input id="menu__toggle" type="checkbox">
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+    </div>
+  </div>
 
 
-    <div class="top">
-      <div class="top__text">
-        <p class="top__title">Legendary</br>footwear</br>reborn.</p>
-        <div class="top__subtitle">Shop now
-          <div class="arrow">
-            <div></div>
+  <div class="top">
+    <div class="top__text">
+      <p class="top__title">Legendary</br>footwear</br>reborn.</p>
+      <div class="top__subtitle">Shop now
+        <div class="arrow">
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="catalog">
+    <div class="title">Featured product</div>
+    <div class="catalog__models">
+      <div class="model">
+        <p class="model__title">Atlas Black/Rasta Axion</p>
+        <div class="model__price-color">
+          <p class="model__price">$89.00</p>
+          <div class="model__color">
+            <div class="model__cirle model__cirle_grey"></div>
+            <div class="model__cirle"></div>
+            <div class="model__cirle model__cirle_red"></div>
+            <div class="model__cirle model__cirle_yellow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="model__line"></div>
+      <div class="model">
+        <p class="model__title">Camel/Chili Pepper Axion</p>
+        <div class="model__price-color">
+          <p class="model__price">$74.00</p>
+          <div class="model__color">
+            <div class="model__cirle model__cirle_grey"></div>
+            <div class="model__cirle model__cirle_beige"></div>
+            <div class="model__cirle model__cirle_red"></div>
+            <div class="model__cirle model__cirle_yellow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="model__line"></div>
+      <div class="model">
+        <p class="model__title">Mandel Smoke/Rust Axion</p>
+        <div class="model__price-color">
+          <p class="model__price">$69.00</p>
+          <div class="model__color">
+            <div class="model__cirle model__cirle_grey"></div>
+            <div class="model__cirle model__cirle_brown"></div>
+            <div class="model__cirle model__cirle_red"></div>
+            <div class="model__cirle model__cirle_yellow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="model__line"></div>
+      <div class="model">
+        <p class="model__title">Cloud/Electric Blue Axion</p>
+        <div class="model__price-color">
+          <p class="model__price">$69.00</p>
+          <div class="model__color">
+            <div class="model__cirle model__cirle_grey"></div>
+            <div class="model__cirle model__cirle_blue"></div>
+            <div class="model__cirle model__cirle_red"></div>
+            <div class="model__cirle model__cirle_yellow"></div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-
-    <div class="catalog">
-      <div class="title">Featured product</div>
-      <div class="catalog__models">
-        <div class="model">
-          <p class="model__title">Atlas Black/Rasta Axion</p>
-          <div class="model__price-color">
-            <p class="model__price">$89.00</p>
-            <div class="model__color">
-              <div class="model__cirle model__cirle_grey"></div>
-              <div class="model__cirle"></div>
-              <div class="model__cirle model__cirle_red"></div>
-              <div class="model__cirle model__cirle_yellow"></div>
-            </div>
-          </div>
-        </div>
-        <div class="model__line"></div>
-        <div class="model">
-          <p class="model__title">Camel/Chili Pepper Axion</p>
-          <div class="model__price-color">
-            <p class="model__price">$74.00</p>
-            <div class="model__color">
-              <div class="model__cirle model__cirle_grey"></div>
-              <div class="model__cirle model__cirle_beige"></div>
-              <div class="model__cirle model__cirle_red"></div>
-              <div class="model__cirle model__cirle_yellow"></div>
-            </div>
-          </div>
-        </div>
-        <div class="model__line"></div>
-        <div class="model">
-          <p class="model__title">Mandel Smoke/Rust Axion</p>
-          <div class="model__price-color">
-            <p class="model__price">$69.00</p>
-            <div class="model__color">
-              <div class="model__cirle model__cirle_grey"></div>
-              <div class="model__cirle model__cirle_brown"></div>
-              <div class="model__cirle model__cirle_red"></div>
-              <div class="model__cirle model__cirle_yellow"></div>
-            </div>
-          </div>
-        </div>
-        <div class="model__line"></div>
-        <div class="model">
-          <p class="model__title">Cloud/Electric Blue Axion</p>
-          <div class="model__price-color">
-            <p class="model__price">$69.00</p>
-            <div class="model__color">
-              <div class="model__cirle model__cirle_grey"></div>
-              <div class="model__cirle model__cirle_blue"></div>
-              <div class="model__cirle model__cirle_red"></div>
-              <div class="model__cirle model__cirle_yellow"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="video">
-      <div class="video__foto-container">
-        <div><img src="images/video.jpg" class="video__foto" alt="Video preview"></div>
-        <div><img src="images/play.png" class="video__play" alt="Play button"></div>
+  <div class="video">
+    <div class="video__foto-container">
+      <div class="video__foto"><img src="images/video.jpg"  alt="Video preview" ></div>
+      <button class="video__play"><div class="triangle"></button>
       </div>
       <div class="video__text">
         <p class="video__title">Legendary footwear reborn</p>
@@ -179,6 +192,7 @@
                 <img src="images/bw-5.jpg" class="gallery__foto" alt="Gallery foto">
                 <img src="images/bw-6.jpg" class="gallery__foto" alt="Gallery foto">
                 <img src="images/bw-7.jpg" class="gallery__foto" alt="Gallery foto">
+                <img src="images/bw-1.jpg" class="gallery__foto" alt="Gallery foto">
               </div>
             </div>
 
